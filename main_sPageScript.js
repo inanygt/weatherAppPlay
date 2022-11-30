@@ -5,9 +5,6 @@ let bYear = document.getElementById("bYear");
 let place = document.getElementById("place");
 let age = document.getElementById("age");
 
-console.log(local);
-console.log(place);
-
 user.innerHTML = local.user;
 // place.innerHTML = local.location;
 
@@ -132,172 +129,87 @@ let qZodiac = {
    ],
 };
 
-// Zodiac if else
+let ratYears = [1948, 1960, 1972, 1984, 1996, 2008, 2020];
+let oxYears = [1949, 1961, 1973, 1985, 1997, 2009, 2021];
+let tigerYears = [1950, 1962, 1974, 1986, 1996, 2010];
+let rabbitYears = [1951, 1963, 1975, 1987, 1999, 2011];
+let dragonYears = [1952, 1964, 1976, 1988, 2000, 2012];
+let snakeYears = [1953, 1965, 1975, 1989, 2001, 2013];
+let horseYears = [1954, 1966, 1976, 1990, 2002, 2014];
+let goatYears = [1955, 1967, 1977, 1991, 2003, 2015];
+let monkeyYears = [1956, 1968, 1980, 1992, 2004, 2016];
+let roosterYears = [1957, 1969, 1981, 1993, 2005, 2017];
+let dogYears = [1958, 1970, 1982, 1994, 2006, 2018];
+let pigYears = [1959, 1971, 1983, 1995, 2007, 2019];
 
-if (
-   birthYear == 1948 ||
-   birthYear == 1960 ||
-   birthYear == 1972 ||
-   birthYear == 1984 ||
-   birthYear == 1996 ||
-   birthYear == 2008 ||
-   birthYear == 2020
-) {
+if (ratYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/rat.png");
    randomQuote.innerHTML = qZodiac.rat[Math.floor(Math.random() * 3)];
 }
-if (
-   birthYear == 1949 ||
-   birthYear == 1961 ||
-   birthYear == 1973 ||
-   birthYear == 1985 ||
-   birthYear == 1997 ||
-   birthYear == 2009 ||
-   birthYear == 2021
-) {
+
+if (oxYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/ox.png");
    randomQuote.innerHTML = qZodiac.ox[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1950 ||
-   birthYear == 1962 ||
-   birthYear == 1974 ||
-   birthYear == 1986 ||
-   birthYear == 1998 ||
-   birthYear == 2010
-) {
+if (tigerYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/tiger.png");
    randomQuote.innerHTML = qZodiac.tiger[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1951 ||
-   birthYear == 1963 ||
-   birthYear == 1975 ||
-   birthYear == 1987 ||
-   birthYear == 1999 ||
-   birthYear == 2011
-) {
+if (rabbitYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/rabbit.png");
    randomQuote.innerHTML = qZodiac.rabbit[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1952 ||
-   birthYear == 1964 ||
-   birthYear == 1976 ||
-   birthYear == 1988 ||
-   birthYear == 2000 ||
-   birthYear == 2012
-) {
+if (dragonYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/dragon.png");
    randomQuote.innerHTML = qZodiac.dragon[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1953 ||
-   birthYear == 1965 ||
-   birthYear == 1977 ||
-   birthYear == 1989 ||
-   birthYear == 2001 ||
-   birthYear == 2013
-) {
+if (snakeYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/snake.png");
    randomQuote.innerHTML = qZodiac.snake[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1954 ||
-   birthYear == 1966 ||
-   birthYear == 1978 ||
-   birthYear == 1990 ||
-   birthYear == 2002 ||
-   birthYear == 2014
-) {
+if (horseYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/horse.png");
    randomQuote.innerHTML = qZodiac.horse[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1955 ||
-   birthYear == 1967 ||
-   birthYear == 1979 ||
-   birthYear == 1991 ||
-   birthYear == 2003 ||
-   birthYear == 2015
-) {
+if (goatYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/goat.png");
    randomQuote.innerHTML = qZodiac.goat[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1956 ||
-   birthYear == 1968 ||
-   birthYear == 1980 ||
-   birthYear == 1992 ||
-   birthYear == 2004 ||
-   birthYear == 2016
-) {
+if (monkeyYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/monkey.png");
    randomQuote.innerHTML = qZodiac.monkey[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1957 ||
-   birthYear == 1969 ||
-   birthYear == 1981 ||
-   birthYear == 1993 ||
-   birthYear == 2005 ||
-   birthYear == 2017
-) {
+if (roosterYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/rooster.png");
    randomQuote.innerHTML = qZodiac.rooster[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1958 ||
-   birthYear == 1970 ||
-   birthYear == 1982 ||
-   birthYear == 1994 ||
-   birthYear == 2006 ||
-   birthYear == 2018
-) {
+if (dogYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/dog.png");
    randomQuote.innerHTML = qZodiac.dog[Math.floor(Math.random() * 3)];
 }
 
-if (
-   birthYear == 1959 ||
-   birthYear == 1971 ||
-   birthYear == 1983 ||
-   birthYear == 1995 ||
-   birthYear == 2007 ||
-   birthYear == 2019
-) {
+if (pigYears.includes(parseInt(birthYear))) {
    let zodiac = (document.getElementById("zodiac").src =
       "Images/zodiac/pig.png");
    randomQuote.innerHTML = qZodiac.pig[Math.floor(Math.random() * 3)];
-}
-
-// Class Exc
-
-class Zodiac {
-   year;
-   // Constructor
-   constructor(value) {
-      this.year = value;
-   }
-   // Methods
 }
