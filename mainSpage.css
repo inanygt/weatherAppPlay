@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+
+.images {
+   width: 100%;
+}
+
+#degrees {
+   font-size: 4rem;
+}
+
+#place {
+   font-size: 4rem;
+}
+
+#welcome {
+   font-size: 4rem;
+}
+
+.row {
+   height: 30vh;
+}
+
+a {
+   color: white;
+   text-decoration: none;
+}
+
+img {
+   width: 100%;
+}
+
+#weather {
+   font-size: 3rem;
+}
+
+#city {
+   font-size: 3rem;
+}
+
+#randomQuote {
+   font-family: 'Lora', serif;
+   font-size: 2rem;
+}
+
+hr {
+   border-top: 2px solid black;
+}
+
+body {
+   background-image: url("Images/bryan-goff-f7YQo-eYHdM-unsplash.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.white {
+   color: white;
+}
+
+.container {
+   height: 100vh;
+}
+
+.black {
+   color: black;
+   font-weight: 500;
+}
