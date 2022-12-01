@@ -25,7 +25,7 @@
 }
 
 .row {
-   height: 30vh;
+   height: 28vh;
 }
 
 a {
@@ -37,6 +37,10 @@ img {
    width: 100%;
 }
 
+/* #zodiac {
+   width: 50%;
+} */
+
 #randomQuote {
    font-family: "Lora", serif;
    font-size: 2rem;
@@ -47,7 +51,8 @@ hr {
 }
 
 body {
-   background-image: url("Images/bryan-goff-f7YQo-eYHdM-unsplash.jpg");
+   background-image: url("Images/pexels-francesco-ungaro-998641.jpg");
+   background-color: black;
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -68,12 +73,10 @@ body {
 /* Media Queries */
 
 @media (min-width: 400px) {
-   #welcome,
    #place,
    #weather,
    #city {
       font-size: 1rem;
-      font-weight: 500;
    }
    #randomQuote {
       font-size: 1.5rem;
@@ -85,7 +88,7 @@ body {
    #place,
    #weather,
    #city {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 500;
    }
    #randomQuote {
@@ -98,7 +101,7 @@ body {
    #place,
    #weather,
    #city {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 500;
    }
    #randomQuote {
