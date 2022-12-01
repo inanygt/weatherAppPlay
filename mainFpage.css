@@ -1,25 +1,24 @@
-/* .row {
-   height: 100vh;
-} */
+body {
+   background-image: url(https://cutewallpaper.org/28/cloudy-rain-phone-wallpaper-gifs/keeping-people-safer-in-extreme-weather.gif);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 
 .form-col {
    padding: 2em;
    border-radius: 4em;
 }
 
-body {
-   background-image: url(https://cutewallpaper.org/28/cloudy-rain-phone-wallpaper-gifs/keeping-people-safer-in-extreme-weather.gif);
-   background-repeat: no-repeat;
-   background-size: cover;
-
-}
-
-.container {
-   height: 100vh;
-}
-
 .row-form {
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.fa-xl {
+   padding: 15px;
+}
+
+a {
+   color: black;
 }
