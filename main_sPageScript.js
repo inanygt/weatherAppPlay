@@ -8,11 +8,11 @@ let age = document.getElementById("age");
 user.innerHTML = local.user;
 // place.innerHTML = local.location;
 
-birthYear = local.bdate.slice(0, 4);
+birthYear = local.bdate;
 bYear.innerHTML = `(${birthYear})`;
 
 const currentYear = new Date().getFullYear();
-let cAge = currentYear - local.bdate.slice(0, 4);
+let cAge = currentYear - local.bdate;
 age.innerHTML = cAge;
 
 let animation = document.getElementById("animation");
