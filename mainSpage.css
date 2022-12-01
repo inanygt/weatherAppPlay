@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 
 .images {
    width: 100%;
@@ -39,7 +38,7 @@ img {
 }
 
 #randomQuote {
-   font-family: 'Lora', serif;
+   font-family: "Lora", serif;
    font-size: 2rem;
 }
 
@@ -65,3 +64,5 @@ body {
    color: black;
    font-weight: 500;
 }
+
+/* Breakpoints */

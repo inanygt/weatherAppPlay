@@ -9,7 +9,7 @@ user.innerHTML = local.user;
 // place.innerHTML = local.location;
 
 birthYear = local.bdate.slice(0, 4);
-bYear.innerHTML = birthYear;
+bYear.innerHTML = `(${birthYear})`;
 
 const currentYear = new Date().getFullYear();
 let cAge = currentYear - local.bdate.slice(0, 4);
@@ -30,30 +30,30 @@ fetch(url)
 ${data.currentConditions.conditions}`;
 
       if (data.currentConditions.icon == "partly-cloudy-day") {
-         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/fSXHTR5nSzKMOPVodt" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/O2-Slovakia-fSXHTR5nSzKMOPVodt">via GIPHY</a></p>`;
+         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/fSXHTR5nSzKMOPVodt" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/O2-Slovakia-fSXHTR5nSzKMOPVodt"></a></p>`;
       }
 
       if (data.currentConditions.icon == "rain") {
-         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:74%;position:relative;"><iframe src="https://giphy.com/embed/39fj7g99qyD72" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/cute-dancing-39fj7g99qyD72">via GIPHY</a></p>`;
+         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:74%;position:relative;"><iframe src="https://giphy.com/embed/39fj7g99qyD72" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/cute-dancing-39fj7g99qyD72"></a></p>`;
       }
 
       if (data.currentConditions.icon == "cloudy") {
-         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:67%;position:relative;"><iframe src="https://giphy.com/embed/Cn46Wi1Fvh11S" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/landscape-time-lapse-photographers-on-tumblr-Cn46Wi1Fvh11S">via GIPHY</a></p>
+         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:67%;position:relative;"><iframe src="https://giphy.com/embed/Cn46Wi1Fvh11S" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/landscape-time-lapse-photographers-on-tumblr-Cn46Wi1Fvh11S"></a></p>
    `;
       }
 
       if (data.currentConditions.icon == "clear-day") {
-         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/mno6BJfy8USic" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/sky-clouds-mno6BJfy8USic">via GIPHY</a></p>
+         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/mno6BJfy8USic" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/sky-clouds-mno6BJfy8USic"></a></p>
    `;
       }
 
       if (data.currentConditions.icon == "snow") {
-         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/l2JIaYp6P3WT5Ybu0" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/justin-g-snow-dive-l2JIaYp6P3WT5Ybu0">via GIPHY</a></p>
+         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/l2JIaYp6P3WT5Ybu0" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/justin-g-snow-dive-l2JIaYp6P3WT5Ybu0"></a></p>
    `;
       }
 
       if (data.currentConditions.icon == "partly-cloudy-night") {
-         animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:67%;position:relative;"><iframe src="https://giphy.com/embed/Cn46Wi1Fvh11S" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/landscape-time-lapse-photographers-on-tumblr-Cn46Wi1Fvh11S">via GIPHY</a></p>
+         animation.innerHTML = `<div style="width:100;height:0;padding-bottom:67%;position:relative;"><iframe src="https://giphy.com/embed/Cn46Wi1Fvh11S" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/landscape-time-lapse-photographers-on-tumblr-Cn46Wi1Fvh11S"></a></p>
    `;
       }
    })
