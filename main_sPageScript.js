@@ -6,8 +6,6 @@ let place = document.getElementById("place");
 let age = document.getElementById("age");
 
 user.innerHTML = local.user;
-// place.innerHTML = local.location;
-
 birthYear = local.bdate;
 bYear.innerHTML = `(${birthYear})`;
 
@@ -25,9 +23,9 @@ fetch(url)
    .then((response) => response.json())
    .then((data) => {
       console.log(data);
-      city.innerHTML = `${data.address}`;
-      weather.innerHTML = `${data.currentConditions.temp}° <br/>
-${data.currentConditions.conditions}`;
+      city.innerHTML = `${data.timezone} <br> ${data.address}`;
+      weather.innerHTML = `${data.currentConditions.conditions} <br> ${data.currentConditions.temp}°
+`;
 
       if (data.currentConditions.icon == "partly-cloudy-day") {
          animation.innerHTML = `<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/fSXHTR5nSzKMOPVodt" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/O2-Slovakia-fSXHTR5nSzKMOPVodt"></a></p>`;

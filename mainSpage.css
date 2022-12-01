@@ -12,8 +12,16 @@
    font-size: 4rem;
 }
 
-#welcome {
-   font-size: 4rem;
+.bigInfo {
+   font-size: 3rem;
+}
+
+#welcome,
+#place,
+#weather,
+#city {
+   font-size: 2rem;
+   font-weight: 500;
 }
 
 .row {
@@ -27,14 +35,6 @@ a {
 
 img {
    width: 100%;
-}
-
-#weather {
-   font-size: 3rem;
-}
-
-#city {
-   font-size: 3rem;
 }
 
 #randomQuote {
@@ -56,7 +56,7 @@ body {
    color: white;
 }
 
-.container {
+.container-fluid {
    height: 100vh;
 }
 
@@ -65,4 +65,43 @@ body {
    font-weight: 500;
 }
 
-/* Breakpoints */
+/* Media Queries */
+
+@media (min-width: 400px) {
+   #welcome,
+   #place,
+   #weather,
+   #city {
+      font-size: 1rem;
+      font-weight: 500;
+   }
+   #randomQuote {
+      font-size: 1.5rem;
+   }
+}
+
+@media (min-width: 768px) {
+   #welcome,
+   #place,
+   #weather,
+   #city {
+      font-size: 2rem;
+      font-weight: 500;
+   }
+   #randomQuote {
+      font-size: 2rem;
+   }
+}
+
+@media (min-width: 992px) {
+   #welcome,
+   #place,
+   #weather,
+   #city {
+      font-size: 3rem;
+      font-weight: 500;
+   }
+   #randomQuote {
+      font-size: 2rem;
+   }
+}
