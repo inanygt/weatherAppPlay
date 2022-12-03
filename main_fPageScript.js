@@ -14,3 +14,11 @@ goButton.addEventListener("click", function () {
    localStorage.setItem("loginObject", JSON.stringify(loginObject));
    window.location.href = "main_sPage.html";
 });
+
+let enter = document.getElementById("location");
+
+enter.addEventListener("keypress", function (e) {
+   if (e.key === "Enter") {
+      document.getElementById("goButton").click();
+   }
+});

@@ -7,13 +7,20 @@ let age = document.getElementById("age");
 
 user.innerHTML = local.user;
 birthYear = local.bdate;
-bYear.innerHTML = `(${birthYear})`;
+bYear.innerHTML = birthYear;
 
 const currentYear = new Date().getFullYear();
 let cAge = currentYear - local.bdate;
 age.innerHTML = cAge;
 
 let animation = document.getElementById("animation");
+
+// Refresh button
+
+let refresh = document.getElementById("refresh");
+refresh.addEventListener("click", function () {
+   window.location.href = "index.html";
+});
 
 let url =
    "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" +
@@ -129,12 +136,12 @@ let qZodiac = {
 
 let ratYears = [1948, 1960, 1972, 1984, 1996, 2008, 2020];
 let oxYears = [1949, 1961, 1973, 1985, 1997, 2009, 2021];
-let tigerYears = [1950, 1962, 1974, 1986, 1996, 2010];
+let tigerYears = [1950, 1962, 1974, 1986, 1998, 2010];
 let rabbitYears = [1951, 1963, 1975, 1987, 1999, 2011];
 let dragonYears = [1952, 1964, 1976, 1988, 2000, 2012];
-let snakeYears = [1953, 1965, 1975, 1989, 2001, 2013];
-let horseYears = [1954, 1966, 1976, 1990, 2002, 2014];
-let goatYears = [1955, 1967, 1977, 1991, 2003, 2015];
+let snakeYears = [1953, 1965, 1977, 1989, 2001, 2013];
+let horseYears = [1954, 1966, 1978, 1990, 2002, 2014];
+let goatYears = [1955, 1967, 1979, 1991, 2003, 2015];
 let monkeyYears = [1956, 1968, 1980, 1992, 2004, 2016];
 let roosterYears = [1957, 1969, 1981, 1993, 2005, 2017];
 let dogYears = [1958, 1970, 1982, 1994, 2006, 2018];

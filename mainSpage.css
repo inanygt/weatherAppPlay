@@ -24,17 +24,14 @@
    font-weight: 500;
 }
 
-.row {
-   height: 28vh;
-}
-
-a {
-   color: white;
-   text-decoration: none;
-}
-
 img {
    width: 100%;
+}
+
+.row-third {
+   position: absolute;
+   bottom: 0;
+   padding-bottom: 1rem;
 }
 
 /* #zodiac {
@@ -44,10 +41,6 @@ img {
 #randomQuote {
    font-family: "Lora", serif;
    font-size: 2rem;
-}
-
-hr {
-   border-top: 2px solid black;
 }
 
 body {
@@ -72,11 +65,11 @@ body {
 
 /* Media Queries */
 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
    #place,
    #weather,
    #city {
-      font-size: 1rem;
+      font-size: 0.8rem;
    }
    #randomQuote {
       font-size: 1.5rem;
